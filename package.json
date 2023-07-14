@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "cypress": "*"
+  },
+  "dependencies": {
+    "@testing-library/cypress": "*",
+    "cross-env": "*"
+  }
+}
