@@ -12,8 +12,8 @@ To run tests in CLI:
 
 `node_modules\.bin\cypress run -b chrome`
 
-It will run all tests in Chrome browser, test results will be in `results` directory,
-if test fails screenshots will be in `cypress\screenshots` directory.
+It will run all tests in Chrome browser, test results will be saved to `results` directory,
+if test fails screenshots will be saved to `cypress\screenshots` directory.
 
 # Comments
-In real project I would use Gherkin syntax, in this case I would use cypress-cucumber-preprocessor library.
+In real project I would use PageObject pattern where it is possible.
