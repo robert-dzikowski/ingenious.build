@@ -13,4 +13,4 @@ To run tests in CLI:
 `node_modules\.bin\cypress run -b chrome`
 
 It will run all tests in Chrome browser, test results will be in `results` directory,
-if test fails screenshots will be in `cypress/screenshots` directory.
+if test fails screenshots will be in `cypress\screenshots` directory.
