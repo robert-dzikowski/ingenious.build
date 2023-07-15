@@ -14,3 +14,6 @@ To run tests in CLI:
 
 It will run all tests in Chrome browser, test results will be in `results` directory,
 if test fails screenshots will be in `cypress\screenshots` directory.
+
+# Comments
+In real project I would use Gherkin syntax, in this case I would use cypress-cucumber-preprocessor library.

@@ -6,15 +6,7 @@ const NAME_Z_TO_A = 'za'
 
 describe('Sorting Tests.', () => {
     beforeEach(() => {
-        cy.visit('https://www.saucedemo.com/')
-        cy.get('.login_logo').should('have.text', 'Swag Labs')
-        cy.get("#user-name").type('standard_user')
-        cy.get("#password").type('secret_sauce')
-        cy.get("#login-button").click()
-
-        cy.url().should('contain', 'www.saucedemo.com/inventory.html')
-        cy.get('.title').should('be.visible')
-        cy.get('.title').should('have.text', 'Products')
+        cy.login('standard_user')
     })
 
     it('Sort by price low to high should work correctly', () => {
@@ -55,7 +47,6 @@ describe('Sorting Tests.', () => {
                 // console.log(typeof (products[i])) // string
                 // expect(products[i]).to.be.greaterThan(products[i + 1]);
                 // expect(products[i] >= products[i + 1]);
-                // console.log(products[i].localeCompare(products[i + 1]) == -1)
                 if (products[i].localeCompare(products[i + 1]) == -1) {
                     throw new Error("Products aren't sorted.");
                 }
@@ -74,7 +65,6 @@ describe('Sorting Tests.', () => {
             products.push($el.text());
         }).then(() => {
             for (let i = 0; i < products.length - 1; i++) {
-                // console.log(products[i].localeCompare(products[i + 1]) == 1)
                 if (products[i].localeCompare(products[i + 1]) == 1) {
                     throw new Error("Products aren't sorted.");
                 }

@@ -4,6 +4,8 @@ module.exports = defineConfig({
   trashAssetsBeforeRuns: true,
   screenshotsFolder: 'cypress/screenshots',
   video: false,
+  chromeWebSecurity: false,
+  pageLoadTimeout: 5000,
   reporter: 'junit',
   reporterOptions: {
     mochaFile: 'results/test-results-[hash].xml',
