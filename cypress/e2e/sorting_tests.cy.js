@@ -4,7 +4,7 @@ const NAME_A_TO_Z = 'az'
 const NAME_Z_TO_A = 'za'
 
 
-describe('Swag Labs Tests.', () => {
+describe('Sorting Tests.', () => {
     beforeEach(() => {
         cy.visit('https://www.saucedemo.com/')
         cy.get('.login_logo').should('have.text', 'Swag Labs')
