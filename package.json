@@ -1,9 +1,9 @@
 {
+  "license": "MIT",	
   "devDependencies": {
-    "cypress": "*"
+    "cypress": " 12.17.1"
   },
   "dependencies": {
-    "@testing-library/cypress": "*",
-    "cross-env": "*"
+    "@testing-library/cypress": "*"
   }
 }
