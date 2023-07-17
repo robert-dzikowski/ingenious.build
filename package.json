@@ -1,7 +1,8 @@
 {
-  "license": "MIT",	
+  "license": "MIT",
   "devDependencies": {
-    "cypress": " 12.17.1"
+    "cypress": "12.17.1",
+    "mocha": "10.2.0"
   },
   "dependencies": {
     "@testing-library/cypress": "*"
